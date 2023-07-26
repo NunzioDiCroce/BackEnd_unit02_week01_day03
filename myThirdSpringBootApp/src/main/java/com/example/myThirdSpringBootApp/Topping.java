@@ -14,6 +14,10 @@ import lombok.extern.slf4j.Slf4j;
 @ToString
 @Slf4j
 
+//@Component
+//@Scope("prototype")
+
+//@Builder
 public class Topping {
 	protected String name;
 	protected double calories;

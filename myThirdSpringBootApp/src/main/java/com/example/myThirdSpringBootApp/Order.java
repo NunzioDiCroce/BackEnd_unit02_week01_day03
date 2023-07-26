@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 
 import lombok.AllArgsConstructor;
@@ -45,8 +46,8 @@ public class Order {
 	// src/main/resources/application.properties
 	protected double orderPrice;
 
-	// @Value("${application.coverCharge}")
-	// protected double coverCharge;
+	@Value("${application.covercharge}")
+	protected double covercharge;
 
 	public void addPizza(Pizza _pizza) {
 		pizzas.add(_pizza);
@@ -91,9 +92,8 @@ public class Order {
 			franchisesTotalPrice = +franchise.getPrice();
 		}
 
-		// return this.orderPrice = pizzasTotalPrice + drinksTotalPrice +
-		// franchisesTotalPrice + (coverCharge * seats);
-		return this.orderPrice = pizzasTotalPrice + drinksTotalPrice + franchisesTotalPrice;
+		return this.orderPrice = pizzasTotalPrice + drinksTotalPrice + franchisesTotalPrice + (covercharge * seats);
+//		return this.orderPrice = pizzasTotalPrice + drinksTotalPrice + franchisesTotalPrice;
 
 	}
 

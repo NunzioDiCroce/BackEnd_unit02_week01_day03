@@ -19,6 +19,9 @@ public class MySecondRunner implements CommandLineRunner {
 
 	}
 
+	// Topping Cheese = new
+	// Topping.builder().name("Cheese").calories(92).price().build(0.69);
+
 	public static void configWithAnnotationConfing() {
 
 		AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(
