@@ -1,7 +1,6 @@
 package com.example.myThirdSpringBootApp;
 
 import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -17,7 +16,6 @@ import lombok.extern.slf4j.Slf4j;
 @ToString
 @Slf4j
 
-@Component
 @Scope("prototype")
 public class Topping {
 	protected String name;
