@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,8 +21,6 @@ import lombok.extern.slf4j.Slf4j;
 @NoArgsConstructor
 @ToString
 @Slf4j
-
-@PropertySource("classpath:application.properties")
 
 public class Order {
 	protected String number;
