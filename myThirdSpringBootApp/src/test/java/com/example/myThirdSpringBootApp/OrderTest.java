@@ -15,7 +15,7 @@ public class OrderTest {
 
 		double calculateOrderPriceTest = 47.11;
 
-		assertEquals(calculateOrderPrice, calculateOrderPriceTest);
+		assertEquals(calculateOrderPriceTest, calculateOrderPrice);
 
 	}
 
