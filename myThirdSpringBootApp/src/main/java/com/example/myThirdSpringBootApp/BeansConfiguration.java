@@ -162,7 +162,6 @@ public class BeansConfiguration {
 		// adding as many franchises as I want
 		order02.addFranchise(getShirt());
 		order02.addFranchiseNotes(getShirt(), "Taglia M");
-		order02.addFranchise(getShirt());
 
 		order02.setOrderPrice(order02.calculateOrderPrice());
 
