@@ -73,3 +73,5 @@ public class Pizza {
 		this.price = _price;
 		this.pizzaSize = _pizzaSize;
 	}
+
+}
